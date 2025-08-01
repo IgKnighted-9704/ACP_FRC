@@ -228,6 +228,24 @@ html,body
     margin: 40px auto;
     padding: 0 20px; /* Add padding for smaller screens */
 }
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     width: 100%;
+}
+
+ label {
+     font-weight: bold;
+}
+
+ input, textarea {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+}
+
 
 #footer {
     background-color: #212529;
