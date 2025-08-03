@@ -27,6 +27,9 @@
         font-size: 1em;
     }
 }
+* {
+  box-sizing: border-box;
+}
 html,body
 {
     width: 100%;
