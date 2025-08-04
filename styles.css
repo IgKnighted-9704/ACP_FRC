@@ -266,6 +266,6 @@ html,body
 #spotfund{
   width: 1000vw;
   height: 1000vh;
-  padding : 10px;
+  padding: 20px;
   display: flex;
 }
