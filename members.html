@@ -12,86 +12,84 @@
     <title>IgKnighted | MEMBERS</title>
 
     <style>
+        /* This applies the exact screenshot styling to EVERY box */
         .profile {
-            background-color: #f8f9fa; 
-            padding: 30px 20px; 
-            border-radius: 15px; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-            height: 100%; 
+            width: 320px; /* Forces the box to stay large */
+            min-height: 450px; /* Makes the box tall like a card */
+            background-color: #fff; /* White background */
+            border: 2px solid #222; /* Black border from your screenshot */
+            border-radius: 20px; /* Rounded corners */
+            padding: 40px 20px;
+            margin-bottom: 40px; /* Space between rows */
+            text-align: center;
         }
         
         .profile img {
-            max-width: 500px; 
-            width: 100%;
-            aspect-ratio: 1 / 1;
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
-            border: 4px solid white; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
         }
         
         .profile h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #111;
         }
         
         .profile h3 {
-            font-size: 1.1rem;
-            color: #6c757d; 
-            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 10px;
         }
-        
+
         .profile h4 {
-            font-size: 1rem;
-            color: #6c757d;
+            font-size: 1.2rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .profile p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-top: 20px;
         }
     </style>
 </head>
 
-<body>
+<body class="bg-light">
 
-  <nav class="navbar navbar-dark navbar-expand-sm bg-dark" id="navbar">
+  <nav class="navbar navbar-dark navbar-expand-sm bg-dark mb-5" id="navbar">
     <div class="container-fluid mx-4">
         <a class="navbar-brand" href="index.html">
           <img class="navbar-brand" src="images/bestflamesmaller.png" width="100px">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="/">HOME</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="FIRST.html">FIRST</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="newsletter.html">NEWSLETTER</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="contactus.html">CONTACT US</a>
-          </li>
-          <li class = "nav-item mx-2">
-            <a class="nav-link" href="fundraiser.html">FUNDRAISER</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="members.html">MEMBERS</a>
-          </li>
+          <li class="nav-item mx-2"><a class="nav-link" href="/">HOME</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="FIRST.html">FIRST</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="newsletter.html">NEWSLETTER</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">CONTACT US</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="fundraiser.html">FUNDRAISER</a></li>
+          <li class="nav-item mx-2"><a class="nav-link active" href="members.html">MEMBERS</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container text-center mt-5 mb-5">
+  <div class="container-fluid px-5">
       
-      <div class="row justify-content-center mb-5">
-          <div class="col-12 col-md-8 col-lg-6">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center">
               <div class="profile">
-                  <img src="images/erick.png" alt="Jake Shim" class="rounded-circle">
+                  <img src="images/erick.png" alt="Jake Shim">
                   <h2>Jake Shim</h2>
                   <h3>President</h3>
                   <p>Jake is a good president.</p>
@@ -99,14 +97,13 @@
           </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-4">
           
-          <div class="col-lg-6 mb-5">
-              
-              <div class="row justify-content-center mb-4">
-                  <div class="col-11 col-md-10">
+          <div class="col-lg-6">
+              <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/Michael_Wang.jpg" alt="Suraj Mateti" class="rounded-circle">
+                          <img src="images/Michael_Wang.jpg" alt="Suraj Mateti">
                           <h2>Suraj Mateti</h2>
                           <h3>Technical Vice President</h3>
                           <p>Suraj is a good technical VP.</p>
@@ -114,47 +111,48 @@
                   </div>
               </div>
               
-              <div class="row justify-content-center">
-                  <div class="col-12 col-sm-6 mb-4">
+              <div class="row">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/drew1.jpg" alt="Kapil Inguva" class="rounded-circle">
+                          <img src="images/drew1.jpg" alt="Kapil Inguva">
                           <h2>Kapil Inguva</h2>
                           <h3>Coach</h3>
                           <h4>Software Lead</h4>
                           <p>Kapil is a good software lead.</p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-6 mb-4">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/justin.jpg" alt="Mahi Ajwani" class="rounded-circle">
+                          <img src="images/justin.jpg" alt="Mahi Ajwani">
                           <h2>Mahi Ajwani</h2>
                           <h3>Hardware Lead</h3>
                           <p>Mahi is a good hardware lead.</p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-6 mb-4">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/matthew.jpg" alt="Nathan Lucke" class="rounded-circle">
+                          <img src="images/matthew.jpg" alt="Nathan Lucke">
                           <h2>Nathan Lucke</h2>
                           <h3>Strategy Lead</h3>
                           <p>Nathan is a good strategy lead.</p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-6 mb-4">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/knight.png" alt="Pranav Tadikonda" class="rounded-circle">
+                          <img src="images/knight.png" alt="Pranav Tadikonda">
                           <h2>Pranav Tadikonda</h2>
                           <h3>CAD Lead</h3>
                           <p>Pranav is a good CAD Lead.</p>
                       </div>
                   </div>
               </div>
-          </div> <div class="col-lg-6 mb-5">
-              
-              <div class="row justify-content-center mb-4">
-                  <div class="col-11 col-md-10">
+          </div>
+
+          <div class="col-lg-6">
+              <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/Sarthak.jpg" alt="Selina Lu" class="rounded-circle">
+                          <img src="images/Sarthak.jpg" alt="Selina Lu">
                           <h2>Selina Lu</h2>
                           <h3>Administrative Vice President</h3>
                           <p>Selina is a good Administrative VP.</p>
@@ -162,33 +160,35 @@
                   </div>
               </div>
 
-              <div class="row justify-content-center">
-                  <div class="col-12 col-sm-6 mb-4">
+              <div class="row">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/gabriel.jpg" alt="Ishi Yadav" class="rounded-circle">
+                          <img src="images/gabriel.jpg" alt="Ishi Yadav">
                           <h2>Ishi Yadav</h2>
                           <h3>Treasurer</h3>
                           <p>Ishi is a good treasurer.</p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-6 mb-4">
+                  <div class="col-md-6 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/knight.png" alt="Karan Vallamshetla" class="rounded-circle">
+                          <img src="images/knight.png" alt="Karan Vallamshetla">
                           <h2>Karan Vallamshetla</h2>
                           <h3>Secretary</h3>
                           <p>Karan is a good secretary.</p>
                       </div>
                   </div>
-                  <div class="col-12 col-sm-6 mb-4">
+                  <div class="col-12 d-flex justify-content-center">
                       <div class="profile">
-                          <img src="images/knight.png" alt="Shreyas Bhatt" class="rounded-circle">
+                          <img src="images/knight.png" alt="Shreyas Bhatt">
                           <h2>Shreyas Bhatt</h2>
                           <h3>Awards Lead</h3>
                           <p>Shreyas is a good awards lead.</p>
                       </div>
                   </div>
               </div>
-          </div> </div>
+          </div>
+
+      </div>
   </div>
 
 </body>
