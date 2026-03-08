@@ -25,12 +25,30 @@
             border-radius: 50%;
             margin-bottom: 15px;
             object-fit: cover;
-            object-position: center top;
+            object-position: center top; /* default for all */
             transition: transform 0.3s ease;
         }
 
+        /* Hover effect */
         .member:hover img {
             transform: scale(1.05);
+        }
+
+        /* Individual headshot adjustments */
+        .face-center-jake {
+            object-position: center 45%; /* Jake’s face perfectly centered */
+        }
+
+        .face-center-pranav {
+            object-position: center 40%; /* Pranav’s face */
+        }
+
+        .face-center-karan {
+            object-position: center 50%; /* Karan’s face */
+        }
+
+        .face-center-selina {
+            object-position: center 45%; /* Selina’s face */
         }
 
         .member-role {
@@ -88,21 +106,18 @@
 
     <div class="container">
 
-        <!-- PRESIDENT -->
         <div class="section-title">President</div>
         <div class="row members-row">
             <div class="col-lg-3 col-md-4 col-sm-6 member">
-                <img src="images/jake.webp" alt="Jake Shim">
+                <img src="images/jake.webp" alt="Jake Shim" class="face-center-jake">
                 <div class="member-role">President</div>
                 <div class="member-name">Jake Shim</div>
             </div>
         </div>
-
-        <!-- VICE PRESIDENTS -->
         <div class="section-title">Vice Presidents</div>
         <div class="row members-row">
             <div class="col-lg-3 col-md-4 col-sm-6 member">
-                <img src="images/selina.webp" alt="Selina Lu">
+                <img src="images/selina.webp" alt="Selina Lu" class="face-center-selina">
                 <div class="member-role">Administrative Vice President</div>
                 <div class="member-name">Selina Lu</div>
             </div>
@@ -112,8 +127,6 @@
                 <div class="member-name">Suraj Mateti</div>
             </div>
         </div>
-
-        <!-- SUBTEAMS -->
         <div class="section-title">Subteam Leads</div>
         <div class="row members-row">
 
@@ -136,7 +149,7 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6 member">
-                <img src="images/pranav.webp" alt="Pranav Tadikonda">
+                <img src="images/pranav.webp" alt="Pranav Tadikonda" class="face-center-pranav">
                 <div class="member-role">CAD Lead</div>
                 <div class="member-name">Pranav Tadikonda</div>
             </div>
@@ -148,7 +161,7 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-6 member">
-                <img src="images/karan.webp" alt="Karan Vallamshetla">
+                <img src="images/karan.webp" alt="Karan Vallamshetla" class="face-center-karan">
                 <div class="member-role">Secretary</div>
                 <div class="member-name">Karan Vallamshetla</div>
             </div>
@@ -161,7 +174,6 @@
 
         </div>
 
-        <!-- MENTORS -->
         <div class="section-title">Mentors</div>
         <div class="row members-row">
             <div class="col-lg-3 col-md-4 col-sm-6 member">
